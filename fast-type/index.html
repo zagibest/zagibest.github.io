@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Speed Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <div>
+        <button onclick="changeLanguage()" class="languageButton">en/mon</button>
+    </div>
+
+    <div>
+        <button id="toggle" onclick="changeTheme()" class="themeButton">dark/light</button>
+    </div>
+
+    <div class="container">
+
+        <div class="heading">Speed Typing</div> 
+
+            <div class="header">
+                <div class="wpm">
+                    <div class="header_text">WPM</div>
+                    <div class="curr_wpm">100</div>
+                </div>
+                <div class="cpm">
+                    <div class="header_text">CPM</div>
+                    <div class="curr_cpm">100</div>
+                </div>
+                <div class="errors">
+                    <div class="header_text">Errors</div>
+                    <div class="curr_errors">0</div>
+                </div>
+                <div class="timer">
+                    <div class="header_text">Time</div>
+                    <div class="curr_time">30s</div>
+                </div>
+                <div class="accuracy">
+                    <div class="header_text">% Accuracy</div>
+                    <div class="curr_accuracy">100</div>
+                </div>
+                
+            </div>
+
+
+        <div class="quote">Click on the area below to start the game.</div>
+        <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()" onfocus="startGame()"></textarea>
+        <button class="restart_btn button-3" role="button" onclick="resetValues()">Restart</button>
+    </div>
+  
+    <div>
+        <a href="https://www.linkedin.com/in/zandan-ochir-ganbold-9973241b8/" class="portfolio-text">made by Zagi</a>
+    </div>
+
+</body>
+<script src="type.js"></script>
+</html>
