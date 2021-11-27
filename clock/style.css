@@ -1,0 +1,141 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.neon {
+  font-size: 9vw;
+  line-height: 9vw;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+.portfolio-text{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    opacity:0.2;
+    text-decoration: none;
+}
+
+.portfolio-text:hover{
+    opacity: 1;
+}
+
+.nav-link{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    opacity:0.4;
+    text-decoration: none;
+    padding: 40px;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+.opacity{
+    opacity: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    flex-direction: row;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .nav ul{
+        list-style-type: style;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-link{
+        padding: 40px;
+    }
+}
+
+.button-stopwatch {
+    font-family: 'Quicksand', sans-serif;
+    width: 100px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    background:none;
+    border:none;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+#buttons li{
+    list-style: none;
+}
+
+#buttons{
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.button-stopwatch:hover {
+    color: #111;
+    background: #0ff;
+    box-shadow: 0 0 50px #0ff;
+    border-radius: 10px;
+}
+
+.full-but{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background:none;
+    border:none;
+    color: white;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.full-but:hover {
+    opacity: 1;
+}
+
+
+.full-icon{
+    width: 30px;
+}

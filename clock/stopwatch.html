@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="stopwatch.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Clock</title>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html" class="nav-link">Digital Clock</a></li>
+            <li><a href="stopwatch.html" class="nav-link opacity">Stopwatch</a></li>
+            <li><a href="world.html" class="nav-link">World Clock</a></li>
+          </ul>
+    </div>
+    
+
+    <div class="container">
+            <span class="neon" id="hours"></span>
+            <span class="neon" id="minutes"></span>
+            <span class="neon" id="seconds"></span>
+            
+            <ul id="buttons">
+                <li><button onclick="startTimer()" class="button-stopwatch">Start</button></li>
+                <li><button onclick="stopTimer()" class="button-stopwatch">Stop</button></li>
+                <li><button onclick="resetTimer()" class="button-stopwatch">Reset</button></li>
+            </ul>
+            
+    </div>
+
+    
+
+    <div>
+        <a href="https://www.linkedin.com/in/zandan-ochir-ganbold-9973241b8/" class="portfolio-text">made by Zagi</a>
+    </div>
+
+    <div>
+        <button class="full-but" onclick="openFullscreen()"><span style="font-size:30px;" class="material-icons material-icons-outlined">
+            fullscreen
+            </span></button>
+    </div>
+</body>
+</html>
